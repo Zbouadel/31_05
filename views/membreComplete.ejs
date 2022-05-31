@@ -1,0 +1,36 @@
+<h1>Complete your Informations</h1>
+
+<div>
+<div>
+    <label>Pseudo : </label>
+    <label><%= pseudo%></label>
+</div>
+<div>
+    <label>Email : </label>
+    <label><%=email%></label>
+</div>
+<form action="/membre" method="POST">
+    <div>
+        <label for="firstname">Firstname</label>
+        <input type="text" id="firstname" name="firstname" required>
+    </div>
+    <div>
+        <label for="lastname">Lastname</label>
+        <input type="text" id="lastname" name="lastname" required>
+    </div>
+    <div>
+        <label for="birthday">Date de Naissance</label>
+        <input type="date" id="birthday" name="birthday" required>
+    </div>
+    <div>
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" required>
+    </div>
+    <div>
+        <label for="adress">Adress</label>
+        <input type="text" id="adress" name="adress" required>
+    </div>
+
+    <button type="submit">submit</button>
+</form>
+</div>
